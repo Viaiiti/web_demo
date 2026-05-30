@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Review Phim</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-film"></i>
+            <h2>ReviewPhim</h2>
+        </div>
+
+        <nav>
+            <a href="http://127.0.0.1:5500/index%20.html">Trang chủ</a>
+            <a href="review.html">Review</a>
+            <a href="topphim.html">Top phim</a>
+            <a href="https://www.facebook.com/le.inh.quoc.viet/?viewas=100000686899395">Liên hệ</a>
+            <a href="baitap.html">Bài Tập</a>
+        </nav>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Tìm phim...">
+            <button onclick="searchMovie()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </header>
+    
+  <main>
+
+        <!-- PHIM NỔI BẬT -->
+        <section class="movie-section">
+
+            <h2 class="section-title">Phim nổi bật</h2>
+
+            <div class="movie-container">
+
+                <!-- CARD 1 -->
+                <div class="movie-card">
+
+                    <img src="images/interstellar.jpg">
+
+                    <div class="movie-content">
+
+                        <h3>Interstellar</h3>
+
+                        <div class="rating">
+                            ⭐ 9.5/10
+                        </div>
+
+                        <p>
+                            Bộ phim khoa học viễn tưởng đỉnh cao của Christopher Nolan,
+                            kể về hành trình khám phá không gian để cứu lấy loài người.
+                        </p>
+
+                        <div class="btn-group">
+
+                            <!-- CHI TIẾT -->
+                            <button onclick="openPopup(
+                            'Interstellar',
+                            'images/interstellar.jpg',
+                            '⭐ 9.5/10',
+                            'Interstellar là một trong những bộ phim khoa học viễn tưởng xuất sắc nhất của Christopher Nolan. Bộ phim kể về hành trình khám phá vũ trụ của Cooper cùng đồng đội nhằm tìm ra hành tinh mới cho nhân loại khi Trái Đất dần không còn sự sống. Điểm mạnh lớn nhất của phim nằm ở cách kể chuyện cực kỳ cảm xúc kết hợp cùng các yếu tố khoa học chân thực. Những cảnh quay ngoài không gian được thực hiện vô cùng hoành tráng và đẹp mắt. Âm nhạc của Hans Zimmer giúp cảm xúc người xem được đẩy lên rất cao trong nhiều phân đoạn. Bộ phim không chỉ nói về không gian mà còn nói về tình cảm gia đình, đặc biệt là tình cha con. Diễn xuất của Matthew McConaughey cực kỳ ấn tượng và giàu cảm xúc. Interstellar có nhiều phân cảnh khiến khán giả phải suy nghĩ về thời gian, tình yêu và sự tồn tại của con người. Đây là bộ phim vừa giải trí vừa mang tính nghệ thuật cao. Sau nhiều năm ra mắt, Interstellar vẫn được xem là tượng đài của dòng phim khoa học viễn tưởng hiện đại.'
+                            )">
+                                Chi tiết
+                            </button>
+
+                            <!-- REVIEW -->
+                            <a href="https://www.youtube.com/results?search_query=interstellar+review"
+                            target="_blank">
+
+                                <button>
+                                    Xem Review
+                                </button>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="movie-card">
+
+                    <img src="images/Endgame.jpg">
+
+                    <div class="movie-content">
+
+                        <h3>Avengers: Endgame</h3>
+
+                        <div class="rating">
+                            ⭐ 9.2/10
+                        </div>
+
+                        <p>
+                            Trận chiến cuối cùng của các siêu anh hùng Marvel chống lại Thanos.
+                        </p>
+
+                        <div class="btn-group">
+
+                            <button onclick="openPopup(
+                            'Avengers: Endgame',
+                            'images/Endgame.jpg',
+                            '⭐ 9.2/10',
+                            'Avengers Endgame là phần kết hoành tráng của hơn 10 năm vũ trụ điện ảnh Marvel. Bộ phim mở đầu bằng bầu không khí mất mát sau cú búng tay của Thanos khiến một nửa sinh vật biến mất. Các siêu anh hùng còn sống phải tìm cách quay ngược thời gian để cứu thế giới. Phim mang đến hàng loạt khoảnh khắc cảm xúc, đặc biệt là sự hy sinh của Iron Man. Những cảnh chiến đấu cuối phim được đầu tư cực kỳ hoành tráng và mãn nhãn. Endgame không chỉ là phim siêu anh hùng mà còn là lời chia tay dành cho thế hệ Avengers đầu tiên. Khán giả sẽ được gặp lại nhiều nhân vật quen thuộc cùng các phân cảnh đầy cảm xúc. Nhạc phim và hiệu ứng hình ảnh đều đạt chất lượng rất cao. Đây là một trong những bom tấn thành công nhất lịch sử điện ảnh Marvel.'
+                            )">
+                                Chi tiết
+                            </button>
+
+                            <a href="https://www.youtube.com/results?search_query=avengers+endgame+review"
+                            target="_blank">
+
+                                <button>
+                                    Xem Review
+                                </button>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="movie-card">
+
+                    <img src="images/joker.jpg">
+                    <div class="movie-content">
+
+                        <h3>Joker</h3>
+
+                        <div class="rating">
+                            ⭐ 9.0/10
+                        </div>
+
+                        <p>
+                            Hành trình biến đổi tâm lý đầy ám ảnh của Arthur Fleck thành Joker.
+                        </p>
+
+                        <div class="btn-group">
+
+                            <button onclick="openPopup(
+                            'Joker',
+                            'images/joker.jpg',
+                            '⭐ 9.0/10',
+                            'Joker là bộ phim tâm lý tội phạm nổi tiếng với diễn xuất xuất thần của Joaquin Phoenix. Bộ phim kể về Arthur Fleck, một người đàn ông cô độc và bị xã hội ruồng bỏ tại thành phố Gotham. Từ một người luôn khao khát được yêu thương, Arthur dần trở thành Joker đầy điên loạn. Phim có màu sắc u tối, nặng tâm lý và phản ánh nhiều góc tối trong xã hội hiện đại. Những phân cảnh nội tâm của nhân vật được thể hiện cực kỳ chân thực và ám ảnh. Âm nhạc buồn cùng cách quay phim nghệ thuật khiến cảm xúc người xem trở nên nặng nề nhưng cuốn hút. Joker không phải phim siêu anh hùng thông thường mà là hành trình tha hóa của một con người cô độc. Bộ phim từng giành nhiều giải thưởng lớn và được đánh giá rất cao.'
+                            )">
+                                Chi tiết
+                            </button>
+
+                            <a href="https://www.youtube.com/results?search_query=joker+review"
+                            target="_blank">
+
+                                <button>
+                                    Xem Review
+                                </button>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="movie-card">
+
+                    <img src="images/the_batman.jpg">
+
+                    <div class="movie-content">
+
+                        <h3>The Batman</h3>
+
+                        <div class="rating">
+                            ⭐ 8.8/10
+                        </div>
+
+                        <p>
+                            Batman đối đầu với tên sát nhân hàng loạt Riddler tại Gotham.
+                        </p>
+
+                        <div class="btn-group">
+
+                            <button onclick="openPopup(
+                            'The Batman',
+                            'images/the_batman.jpg',
+                            '⭐ 8.8/10',
+                            'The Batman mang đến hình ảnh Batman đen tối và thực tế hơn nhiều phiên bản trước đây. Bộ phim theo chân Bruce Wayne trong những năm đầu làm người hùng tại Gotham. Anh phải đối đầu với tên sát nhân hàng loạt Riddler, kẻ đang gieo rắc nỗi sợ khắp thành phố. Phim có phong cách trinh thám kết hợp hành động cực kỳ cuốn hút. Gotham được xây dựng u ám, mưa gió và đầy tội phạm tạo nên bầu không khí rất đặc trưng. Robert Pattinson mang đến một Batman lạnh lùng, cô độc nhưng giàu cảm xúc. Các cảnh hành động được quay chân thực và mạnh mẽ. Âm nhạc của phim cũng góp phần tạo nên cảm giác căng thẳng và bí ẩn. Đây là một trong những phiên bản Batman được đánh giá cao nhất trong nhiều năm gần đây.'
+                            )">
+                                Chi tiết
+                            </button>
+
+                            <a href="https://www.youtube.com/results?search_query=the+batman+review"
+                            target="_blank">
+
+                                <button>
+                                    Xem Review
+                                </button>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="movie-card">
+
+                    <img src="images/the-boy-season4.jpg">
+
+                    <div class="movie-content">
+
+                        <h3>The Boys - Season 4</h3>
+
+                        <div class="rating">
+                            ⭐ 9.0/10
+                        </div>
+
+                        <p>
+                            The Boys - Season 4 tiếp tục câu chuyện về nhóm siêu anh hùng phản diện và những vấn đề xã hội mà họ đối mặt.
+                        </p>
+
+                        <div class="btn-group">
+
+                            <button onclick="openPopup(
+                            'The Boys - Season 4',
+                            'images/the-boy-season4.jpg',
+                            '⭐ 9.0/10',
+                            'The Boys Season 4 tiếp tục khai thác sâu hơn về thế giới siêu anh hùng đầy rẫy những vấn đề đạo đức và xã hội. Trong mùa này, nhóm The Boys phải đối mặt với những kẻ thù mới và những âm mưu đen tối hơn từ các siêu anh hùng. Phim vẫn giữ được phong cách châm biếm, đen tối và đầy bạo lực đặc trưng của series. Các nhân vật được phát triển sâu sắc hơn, đặc biệt là Homelander và Starlight. Cốt truyện mùa này có nhiều tình tiết bất ngờ và những pha hành động mãn nhãn. The Boys Season 4 tiếp tục là một trong những series siêu anh hùng được đánh giá cao nhất hiện nay với sự kết hợp giữa giải trí và phản ánh xã hội sâu sắc.'
+                            )">
+                                Chi tiết
+                            </button>
+
+                            <a href="https://www.youtube.com/results?search_query=the+boys+season+4+review"
+                            target="_blank">
+
+                                <button>
+                                    Xem Review
+                                </button>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+           
+
+
+    </main>
+    
+    <footer>
+        <p>© 2026 ReviewPhim - Movie Review Website</p>
+            <p>Email: quocviet04012005@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <div class="popup" id="moviePopup">
+
+        <div class="popup-content">
+
+        <span class="close-btn" onclick="closePopup()">
+            &times;
+        </span>
+
+        <img id="popupImage"
+        src="">
+
+        <h1 id="popupTitle"></h1>
+
+        <div class="popup-rating" id="popupRating"></div>
+
+        <p id="popupReview"></p>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
+

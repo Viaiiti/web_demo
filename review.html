@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Review Phim</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-film"></i>
+            <h2>ReviewPhim</h2>
+        </div>
+        <nav>
+            <a href="http://127.0.0.1:5500/index%20.html">Trang chủ</a>
+            <a href="review.html">Review</a>
+            <a href="topphim.html">Top phim</a>
+            <a href="https://www.facebook.com/le.inh.quoc.viet/?viewas=100000686899395">Liên hệ</a>
+            <a href="baitap.html">Bài Tập</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Tìm phim...">
+            <button onclick="searchMovie()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="review-section">
+            <div class="review-box">
+                <h1>Gửi Review Phim</h1>
+                <p>
+                    Chia sẻ cảm nhận của bạn về bộ phim yêu thích 🎥
+                </p>
+                <form>
+                    <!-- HỌ TÊN -->
+                    <div class="input-group">
+                        <label>
+                            Họ và tên
+                        </label>
+                        <input type="text"
+                        placeholder="Nhập họ tên">
+                    </div>
+                    <!-- EMAIL -->
+                    <div class="input-group">
+                        <label>
+                            Email
+                        </label>
+                        <input type="email"
+                        placeholder="Nhập email">
+                    </div>
+                    <!-- TÊN PHIM -->
+                    <div class="input-group">
+                        <label>
+                            Tên phim
+                        </label>
+                        <input type="text"
+                        placeholder="Nhập tên phim">
+                    </div>
+                    <!-- ĐÁNH GIÁ -->
+                    <div class="input-group">
+                        <label>
+                            Đánh giá
+                        </label>
+                        <select>
+                            <option>
+                                ⭐ 1/10
+                            </option>
+
+                            <option>
+                                ⭐ 2/10
+                            </option>
+
+                            <option>
+                                ⭐ 3/10
+                            </option>
+
+                            <option>
+                                ⭐ 4/10
+                            </option>
+
+                            <option>
+                                ⭐ 5/10
+                            </option>
+
+                            <option>
+                                ⭐ 6/10
+                            </option>
+
+                            <option>
+                                ⭐ 7/10
+                            </option>
+
+                            <option>
+                                ⭐ 8/10
+                            </option>
+
+                            <option>
+                                ⭐ 9/10
+                            </option>
+
+                            <option>
+                                ⭐ 10/10
+                            </option>
+                        </select>
+                    </div>
+                    <!-- REVIEW -->
+                    <div class="input-group">
+                        <label>
+                            Nội dung review
+                        </label>
+                        <textarea
+                        rows="8"
+                        placeholder="Nhập cảm nhận của bạn về bộ phim..."></textarea>
+                    </div>
+                    <!-- BUTTON -->
+                    <button type="submit"
+                    class="review-btn">
+                        Gửi Review
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 ReviewPhim - Movie Review Website</p>
+            <p>Email: quocviet04012005@gmail.com</p>
+    </footer>
+    <script src="script.js"></script>
+    <div class="popup" id="moviePopup">
+        <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">
+            &times;
+        </span>
+        <img id="popupImage"
+        src="">
+        <h1 id="popupTitle"></h1>
+        <div class="popup-rating" id="popupRating"></div>
+        <p id="popupReview"></p>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+

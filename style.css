@@ -1,0 +1,431 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    height:80px;
+    background:#111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    color:#ffcc00;
+    font-size:30px;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffcc00;
+}
+
+/* SEARCH */
+
+.search-box{
+    display:flex;
+}
+
+.search-box input{
+    width:220px;
+    padding:10px;
+    border:none;
+    outline:none;
+    border-radius:5px 0 0 5px;
+}
+
+.search-box button{
+    width:45px;
+    border:none;
+    background:#ffcc00;
+    border-radius:0 5px 5px 0;
+    cursor:pointer;
+}
+
+/* BANNER */
+
+.banner{
+    width:100%;
+    height:550px;
+    background:url('https://wallpaperaccess.com/full/329583.jpg')
+    center/cover;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+.overlay h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.overlay p{
+    font-size:22px;
+}
+
+/* MOVIE */
+
+main{
+    padding: 100px;
+}
+
+.section-title{
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+.movie-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.movie-card,
+.lab-card,
+.topmovie-card{
+    background:#1b1b1b;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+    border:2px solid #2a2a2a;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+.movie-card:hover,
+.lab-card:hover,
+.topmovie-card:hover{
+    transform:translateY(-10px);
+    border-color:#ffcc00;
+}
+
+.movie-card img,
+.topmovie-card img{
+    width:100%;
+    height:380px;
+    object-fit:cover;
+}
+
+.movie-content,
+.topmovie-content{
+    padding:25px;
+}
+
+.movie-content h3,
+.topmovie-content h2{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.rating,
+.topmovie-rating{
+    color:#ffcc00;
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+.movie-content p,
+.topmovie-content p{
+    color:#ccc;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+/* BUTTON */
+
+.movie-content button,
+.review-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#ffcc00;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.movie-content button:hover,
+.review-btn:hover{
+    background:#ffd633;
+    transform:scale(1.02);
+}
+
+.btn-group{
+    display:flex;
+    gap:10px;
+}
+
+.btn-group a{
+    flex:1;
+}
+
+/* POPUP */
+
+.popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.8);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.popup-content{
+    width:70%;
+    max-height:90vh;
+    overflow-y:auto;
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:20px;
+    position:relative;
+    animation:popupShow .3s ease;
+}
+
+.popup-content img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.popup-content h1{
+    font-size:45px;
+}
+
+.popup-rating{
+    color:#ffcc00;
+    font-size:24px;
+    margin:15px 0;
+}
+
+.popup-content p{
+    color:#ddd;
+    line-height:2;
+    font-size:18px;
+}
+
+.close-btn{
+    position:absolute;
+    top:15px;
+    right:25px;
+    font-size:40px;
+    cursor:pointer;
+}
+
+/* LAB + TOP PHIM */
+
+.labs-section,
+.topmovie-section,
+.review-section{
+    min-height:100vh;
+    background:#0f0f0f;
+    padding:80px 50px;
+}
+
+.labs-section h1,
+.topmovie-section h1,
+.review-box h1{
+    font-size:55px;
+    color:#ffcc00;
+    margin-bottom:10px;
+}
+
+.lab-subtitle,
+.topmovie-subtitle,
+.review-box p{
+    color:#ccc;
+    font-size:22px;
+    margin-bottom:50px;
+}
+
+.labs-container,
+.topmovie-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+}
+
+/* LAB */
+
+
+.lab-card{
+    background:#1e2e52;
+    padding:35px;
+}
+
+
+
+
+
+.lab-card h2{
+    font-size:30px;
+    margin-bottom:25px;
+    border-bottom:2px solid #f40c0c;
+    padding-bottom:15px;
+}
+
+.lab-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.lab-list a{
+    color:#ccc;
+    text-decoration:none;
+    font-size:22px;
+    transition:.3s;
+}
+
+.lab-list a:hover{
+    color:#ffcc00;
+    transform:translateX(10px);
+}
+
+/* REVIEW FORM */
+
+.review-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.review-box{
+    width:700px;
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:20px;
+}
+
+.input-group{
+    margin-bottom:25px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:#2a2a2a;
+    color:white;
+    font-size:17px;
+}
+
+textarea{
+    resize:none;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+}
+
+/* ANIMATION */
+
+@keyframes popupShow{
+    from{
+        transform:scale(.7);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:20px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .overlay h1,
+    .labs-section h1,
+    .topmovie-section h1,
+    .review-box h1{
+        font-size:40px;
+    }
+
+    .popup-content{
+        width:95%;
+    }
+
+    .popup-content img{
+        height:250px;
+    }
+
+    .review-box{
+        width:100%;
+    }
+
+    .labs-section,
+    .topmovie-section{
+        padding:50px 20px;
+    }
+}
+
